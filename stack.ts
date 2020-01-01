@@ -9,8 +9,7 @@ class Stack<T> {
     }
 
     push(data: T) {
-        this.stack.push(data);
-        ++this.top;
+        this.stack[++this.top] = data;
     }
 
     pop() {

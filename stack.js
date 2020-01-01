@@ -4,8 +4,7 @@ var Stack = /** @class */ (function () {
         this.stack = [];
     }
     Stack.prototype.push = function (data) {
-        this.stack.push(data);
-        ++this.top;
+        this.stack[++this.top] = data;
     };
     Stack.prototype.pop = function () {
         if (!this.isEmpty()) {
