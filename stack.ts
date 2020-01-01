@@ -1,14 +1,14 @@
 
 
-class Stack {
-    stack: number[];
+class Stack<T> {
+    stack: T[];
     top = -1;
 
     constructor() {
         this.stack = [];
     }
 
-    push(data: number) {
+    push(data: T) {
         this.stack.push(data);
         ++this.top;
     }
@@ -32,7 +32,7 @@ class Stack {
     }
 }
 
-const s = new Stack();
+const s = new Stack<number>();
 s.push(3);
 s.push(4);
 s.push(1);
